@@ -1,0 +1,43 @@
+header {
+    background-color: #000010;
+    height: 63px;
+}
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+img {
+        height:  63px;
+        width: 63px;
+        left: 0px;
+    }
+    * { margin: 0; }
+
+    header { -webkit-transition: all .5s; transition: all .5s; display: -webkit-box; display: -ms-flexbox; display: flex; position: fixed; background-color: 000010; z-index: 100; padding-left: 25px;/*<--헤더 이미지 왼쪽 간격 조정*/ padding-top: 10px; padding-bottom: 10px; width: 100%; height: 40px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-shadow: rgba(0, 0, 0, 0.253) -1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.253) -1px 1px 5px; }
+    header > nav { -webkit-transition: all .5s; transition: all .5s; display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: 50px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 50px; }
+    header > a { -webkit-transition: all .5s; transition: all .5s; color: fff; text-decoration: none; }
+    header > img { height: 60px; -webkit-transition: all .5s; transition: all .5s; }
+    
+    @media (max-width: 500px) { header { padding-left: 20px; }
+      header > nav { gap: 20px; margin-left: 20px; }
+      header > img { height: 30px; } }
+b{
+    width: 387px;
+    height: 114px;
+    left: 100px;
+    top: 63px;
+
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+
+}
+
+h3 {
+    font-weight: 100;
+}
+
+
+    
