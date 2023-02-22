@@ -1,1 +1,2 @@
 document.querySelector("header > img").addEventListener("click", () => {location.href = "/"})
+document.querySelector("header > a#2").addEventListener("click", () => {location.href = "https://discord.gg/ucE6SRVDaR"})
