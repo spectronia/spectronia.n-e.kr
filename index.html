@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script src="./scripts/all.js"></script>
     <title>Spectronia Music</title>
 </head>
@@ -16,7 +17,7 @@
                 <label>  </label>
                 <a id="2" href="https://discord.gg/QMXMHRU6BY">디스코드</a>
                 <label>  </label>
-                <a id="3" href="#">메뉴</a>
+                <a id="3" href="#" onclick="javascript:sendLink()">공유</a>
             </header>
         <main>
             <br/>
@@ -38,7 +39,43 @@
                   당신도 함께 하시겠어요?<br/>
                   메뉴바에 [디스코드]를 클릭해 보세요!
             </h3>
+            <script type="text/javascript">
+                Kakao.init('8d08946e429fe807d835911df4f5549f');
+                 function sendLink() {
+                   Kakao.Link.sendDefault({
+                     objectType: 'feed',
+                     content: {
+                       title: '글로벌 음악 커뮤니티, Spectronia Music',
+                       description: '우리서버는 다른 커뮤니티처럼 획일화된 운영이 아닌 정형화된 방식을 추구해요:)',
+                       imageUrl:
+                         'https://spectronia.o-r.kr/imgs/IMG_8833.jpeg',
+                       link: {
+                         mobileWebUrl: 'https://spectronia.o-r.kr',
+                         webUrl: 'https://spectronia.o-r.kr',
+                       },
+                     },
+                     buttons: [
+                       {
+                         title: '서버 설명 보기',
+                         link: {
+                           mobileWebUrl: 'https://spectronia.o-r.kr',
+                           webUrl: 'https://spectronia.o-r.kr',
+                         },
+                       },
+                       {
+                         title: '서버 참가하기',
+                         link: {
+                           mobileWebUrl: 'https://discord.gg/QMXMHRU6BY',
+                           webUrl: 'https://discord.gg/QMXMHRU6BY',
+                         },
+                       },
+                     ],
+                   })
+                 }
+               </script>
+               
         </main>
+
 
 </body>
 </html>
