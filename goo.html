@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="./scripts/all.js"></script>
+    <title>Spectronia Music</title>
+</head>
+<body>
+            <header>
+                <a href="/"><img src="./imgs/84403E74-F626-486D-91D9-A37F48EAA1A5.gif"></img></a>
+                <label>  </label>
+                <a id="1" href="#">소개</a>
+                <label>  </label>
+                <a id="2" href="https://discord.gg/QMXMHRU6BY">디스코드</a>
+                <label>  </label>
+                <a id="3" href="#" onclick="javascript:sendLink()">공유</a>
+            </header>
+        <main>
+            <br/>
+            <br />
+            <br />
+            <br />
+            <label>  </label><b>안녕하세요!</b><br />
+            <label>  </label><b>Spectronia</b><br />
+            <label>  </label><b>Music</b>
+            <b>입니다!</b>
+            <br/>
+            <hr width=”875px" color=”000010” noshade />
+            <br/>
+            <h3>
+                  저희는 음악을 좋아하는 사람들이 모여서 편안한 분위기로 즐거운 대화하는 것을 계기로 형성된 커뮤니티입니다.<br/>
+                  저희가 추구하는 것은 다른 커뮤니티처럼 획일화된 운영이 아닌 정형화된 방식입니다.<br/>
+                  그렇다고 절대 딱딱한 느낌의 분위기가 아니며 모든 분들이 보다 더 쉽게 어울릴 수 있는 분위기를 만들어 갈 것입니다.<br/>
+                <br/>
+                  당신도 함께 하시겠어요?<br/>
+                  메뉴바에 [디스코드]를 클릭해 보세요!
+            </h3>
+            <script type="text/javascript">
+                Kakao.init('8d08946e429fe807d835911df4f5549f');
+                 function sendLink() {
+                   Kakao.Link.sendDefault({
+                     objectType: 'feed',
+                     content: {
+                       title: '글로벌 음악 커뮤니티, Spectronia Music',
+                       description: '우리서버는 다른 커뮤니티처럼 획일화된 운영이 아닌 정형화된 방식을 추구해요:)',
+                       imageUrl:
+                         'https://spectronia.o-r.kr/imgs/IMG_8833.jpeg',
+                       link: {
+                         mobileWebUrl: 'https://spectronia.o-r.kr',
+                         webUrl: 'https://spectronia.o-r.kr',
+                       },
+                     },
+                     buttons: [
+                       {
+                         title: '서버 설명 보기',
+                         link: {
+                           mobileWebUrl: 'https://spectronia.o-r.kr',
+                           webUrl: 'https://spectronia.o-r.kr',
+                         },
+                       },
+                       {
+                         title: '서버 참가하기',
+                         link: {
+                           mobileWebUrl: 'https://discord.gg/QMXMHRU6BY',
+                           webUrl: 'https://discord.gg/QMXMHRU6BY',
+                         },
+                       },
+                     ],
+                   })
+                 }
+               </script>
+               
+        </main>
+
+
+</body>
+</html>
